@@ -1,0 +1,123 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #000; /* black background */
+  color: #fff; /* white text */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #111;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+.navbar button:hover {
+  background: #e50914;
+  border-radius: 5px;
+}
+
+/* Pages */
+.page {
+  display: none;
+  padding: 20px;
+}
+.page.active {
+  display: block;
+}
+
+/* Notice Card */
+.notice-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255,0,0,0.3);
+}
+.notice-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #e50914;
+}
+.join-btn {
+  display: block;
+  text-align: center;
+  background: #e50914;
+  color: #fff;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.join-btn:hover {
+  background: #b00610;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+form input, form textarea, form button {
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+}
+form input, form textarea {
+  background: #222;
+  color: #fff;
+}
+form button {
+  margin-top: 15px;
+  background: #e50914;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background: #b00610;
+}
+
+/* Members */
+#member-list {
+  list-style: none;
+  padding: 0;
+}
+#member-list li {
+  background: #111;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remove-btn {
+  background: #e50914;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background: #b00610;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team PRMs Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Tabs -->
+  <nav class="navbar">
+    <button onclick="showPage('notice')">Notice</button>
+    <button onclick="showPage('reports')">Reports</button>
+    <button onclick="showPage('members')">Members</button>
+    <button onclick="showPage('settings')">Settings</button>
+  </nav>
+
+  <!-- Notice Page -->
+  <div id="notice" class="page active">
+    <h2>Notices</h2>
+    <div id="notice-list"></div>
+  </div>
+
+  <!-- Reports Page -->
+  <div id="reports" class="page">
+    <h2>Reports</h2>
+    <p>No reports yet.</p>
+  </div>
+
+  <!-- Members Page -->
+  <div id="members" class="page">
+    <h2>Team Members</h2>
+    <ul id="member-list"></ul>
+
+    <h3>Add Member</h3>
+    <form id="member-form">
+      <input type="text" id="member-name" placeholder="Full Name" required>
+      <input type="text" id="member-role" placeholder="Role" required>
+      <button type="submit">Add Member</button>
+    </form>
+  </div>
+
+  <!-- Settings Page -->
+  <div id="settings" class="page">
+    <h2>Admin Panel</h2>
+    <form id="notice-form">
+      <label>Title</label>
+      <input type="text" id="title" required>
+
+      <label>Date</label>
+      <input type="date" id="date" required>
+
+      <label>Time</label>
+      <input type="time" id="time" required>
+
+      <label>Venue</label>
+      <input type="text" id="venue" required>
+
+      <label>Meeting Link</label>
+      <input type="url" id="link" placeholder="https://meet.google.com" required>
+
+      <label>Host</label>
+      <input type="text" id="host" required>
+
+      <label>Participants (comma separated)</label>
+      <textarea id="participants" rows="3" required></textarea>
+
+      <label>Time Keeper</label>
+      <input type="text" id="timekeeper" required>
+
+      <button type="submit">Add Notice</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
